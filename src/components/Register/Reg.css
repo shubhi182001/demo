@@ -1,0 +1,164 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.form_container{
+  display: flex;
+}
+
+
+
+.image_left{
+  width:100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-image: url(../../../public/assets/Photos/bg1.svg);
+  background-size:100% 100%;
+}
+.image_right{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../../public/assets/Photos/bg3.svg);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  display: block;
+  overflow: auto;
+
+}
+.heading{
+  display: block;
+  text-align: center;
+  margin-top:1.2rem;
+}
+
+.left_heading{
+  font-weight: 600;
+  font-size: 2.2rem;
+
+}
+
+.input{
+  display: block; 
+  text-align: center;
+
+
+}
+.input_container{
+display:block;
+margin: 1rem 1rem;
+
+}
+input::placeholder{
+  display: flex;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+}
+.input_field{
+  margin-bottom: 0;
+  width: 55%;
+  background: #FFFCFC;
+border: 1px solid #777777;
+border-radius: 0.4rem;
+font-size: 1.2rem;
+letter-spacing: -0.03em;
+padding:0  0.2rem;
+
+}
+
+.justify{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.radio_text{
+
+  font-weight: 600;
+  margin:0 0.5rem ;
+  font-size: 1.3rem;
+  line-height: 1.2rem;
+  letter-spacing: -0.03em;
+}
+
+
+
+.btn{
+  background: rgba(57, 73, 171, 0.95);
+border-radius: 50px;
+font-weight: 400;
+font-size: 28px;
+line-height: 32px;
+text-align: center;
+letter-spacing: -0.055em;
+
+color: #FFFCFC;
+}
+.error_msg{
+  display: block;
+  font-size: 0.9rem;
+  color: red;
+  margin: auto;
+  text-align: left;
+  width: 55%;
+  margin-bottom:0.7%;
+  opacity: 1;
+}
+.captcha{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media screen and (max-width:430px) {
+  .form_container{
+    flex-direction: column;
+  }
+  
+  .image_left{
+    background-image: url(../../../public/assets/Photos/bg_m.svg);
+    background-size: contain;
+    position: relative;
+  }
+  .image_right{
+    height: fit-content;
+    position: absolute;
+    top:50%;
+  }
+ .heading{
+   display: flex;
+   flex-direction: column;
+ }
+ .input_field,.error_msg{
+   width: 76%;
+ }
+ 
+}
+@media screen and (max-width:1032px){
+  html{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width:909px){
+  html{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width:796px){
+  html{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width:376px){
+  .image_right{
+    top:48%;
+  }
+}
+
+
+
+
+
